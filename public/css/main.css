@@ -1,5 +1,5 @@
 @import "base.css";
-
+/* header */
 header{background-image:url("../img/bg.jpg"); width:100%; height:100%;
 position:relative; background-size:cover;background-repeat:no-repeat; background-attachment:fixed; overflow:hidden;}
 .h_logo{position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
@@ -8,11 +8,26 @@ position:relative; background-size:cover;background-repeat:no-repeat; background
 top:0; }
 .lnbs{font-family:seoul-namsan-jang-eb; font-size:1rem;font-weight:bold;}
 .logo{width:15%;}
-.lnb{width:65%;}
-.lnb>li{float:left; width:20%; text-align:center;}
-.lnb>li{line-height:90px;}
+.logo_on{display:none; width:15%;}
+.lnb{width:65%; position:relative;}
+.lnb>li{float:left; width:20%; text-align:center; line-height:90px; position:relative; }
 .lnb>li .lnb_down{line-height:1rem;}
-.gnb{width:20%;}
+.lnb>li>a{position:relative; z-index:2; color:#fff;}
+.lnb>li:first-child:hover>a{color:#fff !important;}
+.lnb>li:nth-child(2):hover>a,
+.lnb>li:nth-child(3):hover>a,
+.lnb>li:nth-child(4):hover>a{color:#f30 !important;}
+
+.lnb>li:last-child:hover>a{color:#fff !important;}
+.lnb_bt{width:100%;height:80px; background-color:#ad3536;
+border-radius:0 0 10px 10px; position:absolute; display:none;}
+.lnb_down{background-color:#fff; border-radius:0 0 10px 10px; display:none;}
+.lnb_down>li>a{padding-bottom:1rem; display:block;}
+/* gnb */
+.gnb{width:20%; font-weight:normal; font-size:0.875rem;
+color:rgba(255,255,255,0.7)}
+.gnb>li{float:left;}
+
 .h_order{position:absolute; bottom:-255px; right:20%; background-color:#ad3536;
 border-radius:10% 10% 0 0; padding:1.6% 1%; color:#fff; text-align:center;
 }
@@ -23,9 +38,5 @@ background-color:#ad3536; font-size:0.875rem; color:#fff; padding:0.5rem 1rem;
 margin-bottom:0.75rem;}
 #submit{margin-bottom:0; background-color:#fff; color:#ad3536; font-weight:bold;
 font-family:seoul-namsan-jang-eb !important; }
-
-
-
-
 
 section{height:500px; background-color:#ccc; position:relative; z-index:1;}
