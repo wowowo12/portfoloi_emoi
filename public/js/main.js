@@ -1,8 +1,8 @@
 $(".h_order").click(function(){
-    $(this).stop().animate({"bottom":"0"});
+    if($(window).width()>960) $(this).stop().animate({"bottom":"0"});
 });
 $("header").stop().click(function(){
-    $(".h_order").animate({"bottom":"-255px"});
+    if($(window).width()>960) $(".h_order").animate({"bottom":"-255px"});
 });
 $(".lnb>li").hover(function(){
     $(this).children(".lnb_bt").slideToggle(200);
