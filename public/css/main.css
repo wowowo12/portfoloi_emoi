@@ -39,4 +39,17 @@ margin-bottom:0.75rem;}
 #submit{margin-bottom:0; background-color:#fff; color:#ad3536; font-weight:bold;
 font-family:seoul-namsan-jang-eb !important; }
 
-section{height:500px; background-color:#ccc; position:relative; z-index:1;}
+#about{background-color:#1f282b; position:relative; z-index:1; color:#fff;
+ font-size:1.4rem; padding:5rem 0;}
+#about ul:nth-of-type(2)>.ab_txt{text-align:right;}
+.ab_cont{position:relative;}
+.ab_cont>.ab_img{padding:0;}
+.ab_cont>.ab_img>.img_ab{position:absolute; left:0; top:0;}
+.ab_img>.ab_img_t{font-size:2rem; position:absolute; left:50%; top:50%;
+    transform:translate(-50%,-50%); font-weight:500; display:none;
+}
+.ab_txt>.table{display:table; width:100%; height:100%;}
+.ab_txt>.table>.table_c{display:table-cell; vertical-align: middle;}
+.ab_cont>.ab_txt p{letter-spacing:0.09375rem;}
+.ab_cont>.ab_txt p>span{display:block;} 
+ 
