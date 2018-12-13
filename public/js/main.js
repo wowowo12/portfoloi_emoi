@@ -40,3 +40,5 @@ $("#bar").click(function(){
         $(this).hide();
     })
 })
+// if ($(window).width()<961){
+// $(".ab_cont>.ab_txt p").removeClass("ab_txt_ani");}

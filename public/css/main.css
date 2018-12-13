@@ -1,7 +1,7 @@
 @import "base.css";
 /* header */
 header{background-image:url("../img/bg.jpg"); width:100%; height:100%;
-position:relative; background-size:cover;background-repeat:no-repeat; background-attachment:fixed; overflow:hidden;}
+position:relative; background-size:cover; background-position:center; background-repeat:no-repeat; background-attachment:fixed; overflow:hidden;}
 #bar{position:absolute; right:3%; top:20px; color:#ccc; display:none;
 font-size:1.5rem; }
 .h_logo{position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:20%;
@@ -51,12 +51,12 @@ font-family:seoul-namsan-jang-eb !important; }
 #about ul:nth-of-type(2)>.ab_txt{text-align:right; padding-right:2.1875rem;}
 .ab_cont{position:relative;}
 .ab_cont>.ab_img{padding:0;}
-.ab_cont>.ab_img>.img_ab{position:absolute; left:0; top:0;}
+.img_ab{position:absolute; left:0; top:0;}
 .ab_img>.ab_img_t{font-size:2rem; position:absolute; left:50%; top:50%;
-    transform:translate(-50%,-60%); font-weight:500; display:none;}
+    transform:translate(-50%,-50%); font-weight:500; display:none;}
 .ab_txt>.table{display:table; width:100%; height:100%;}
 .ab_txt>.table>.table_c{display:table-cell; vertical-align: middle;}
-.ab_cont>.ab_txt p{letter-spacing:-0.13rem; margin-top:-2em;
+.ab_txt_ani{letter-spacing:-0.13rem; margin-top:-2em;
 animation:ab_txt_ani ease-in 1.5s forwards}
 @keyframes ab_txt_ani{
     0%{opacity:0;}
@@ -104,11 +104,15 @@ animation:ab_txt_ani ease-in 1.5s forwards}
     .lnb_bt{width:100%;height:4.28rem; background-color:#ad3536;
     border-radius:0 0 10px 10px; position:absolute; display:none;}
     .gnb{width:auto; position:absolute; top:1%; right:3%; color:#fff; }
-    .h_order{position:static; width:100%; height:auto;background-color:#ad3536;
-    padding:2% 1%;}
+    .h_order{position:static; width:100%; height:auto; background-color:#ad3536;}
+    .ab_food{bottom:10%; width:35%;}
+ 
+
 }
-@media screen and(max-width:768px){
-    
+@media (max-width:768px){
+    /* .ab_img{width:80%; margin:0 auto;}
+    .ab_txt{text-align:center;}
+  .ab_txt{text-align:center; display:none;} */
 }
 @media screen and(max-width:480px){
     
