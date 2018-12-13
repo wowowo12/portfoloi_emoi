@@ -22,5 +22,11 @@ $(".nav_bg").hover(function(){
     $(".logo_on").hide();
 });
 
-
+$(".ab_img").hover(function(){
+    $(this).children(".img_ab").fadeOut();
+    $(this).children(".ab_img_t").show();
+},function(){
+    $(this).children(".img_ab").fadeIn();
+    $(this).children(".ab_img_t").hide();
+});
 
