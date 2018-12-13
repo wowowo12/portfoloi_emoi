@@ -5,8 +5,8 @@ $("header").stop().click(function(){
     if($(window).width()>960) $(".h_order").animate({"bottom":"-255px"});
 });
 $(".lnb>li").hover(function(){
-    $(this).children(".lnb_bt").slideToggle(200);
-    $(this).find(".lnb_down").slideToggle(200);
+    $(this).children(".lnb_bt").stop().slideToggle(200);
+    $(this).find(".lnb_down").stop().slideToggle(200);
 });
 $(".nav_bg").hover(function(){
     $(this).css({"background-color":"#fff"});
@@ -36,4 +36,7 @@ $(".ab_img").hover(function(){
 
 $("#bar").click(function(){
     $(".lnb").slideToggle();
+    $(".lnb").mouseleave(function(){
+        $(this).hide();
+    })
 })
