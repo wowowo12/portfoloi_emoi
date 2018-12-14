@@ -14,7 +14,7 @@ font-family: 'Gothic A1', sans-serif;
 @import url("https://googledrive.com/host/0BxmAw3HA4YGCfnNDMS13TmFBVUMzLXFhY2ctY3kxVTBJMjRJelNfU1pYd2tMLThqOWU1SlU/seoul-namsan-jang-b.css");
 @import url("https://googledrive.com/host/0BxmAw3HA4YGCfklGTXVUdXVFOWxwZDktclAxcG1nWkdDcHZIR3p4QWRUSGFzQ2lEcmJydkE/seoul-namsan-jang-eb.css");
 html, body {margin: 0; padding: 0; font-size: 16px; color:#222; box-sizing: border-box; font-family:'Noto Sans KR', sans-serif; height:100%; font-weight:300;}
-div, ul, li, ol, dl, dd, dt, hr,p{margin: 0; padding: 0; box-sizing: border-box; list-style: none;}
+div, ul, li, ol, dl, dd, dt, hr,p, h1,h2, h3,h4,h5,h6{margin: 0; padding: 0; box-sizing: border-box; list-style: none;}
 /*** 게시판 만들때 설명 ***/
 table {margin:0; padding:0; border-collapse:collapse;}
 th, td {margin:0; padding:0;}
