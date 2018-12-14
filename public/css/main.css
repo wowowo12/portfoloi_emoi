@@ -1,4 +1,5 @@
 @import "base.css";
+html, body{overflow-x:hidden;}
 /* header */
 header{background-image:url("../img/bg.jpg"); width:100%; min-height:100%;
 position:relative; background-size:cover; background-position:center; background-repeat:no-repeat; background-attachment:fixed; z-index:99; }
@@ -183,6 +184,7 @@ border-radius:0; padding:3% 1%;}
 }
 
 @media (max-width:575px){
+    #banner{padding-bottom:0;}
      .ab_img{width:80%; margin:0 auto;}
      #about{padding-top:3rem;}
      #about ul:nth-of-type(1)>.ab_txt,
@@ -200,7 +202,9 @@ border-radius:0; padding:3% 1%;}
      .ab_cont>.ab_txt p>span{display:inline;}
      .ab_txt_ani{letter-spacing:0;}
      .ban_txt>p{display:none;}
+     #event{background-image:none; background-color:#fff;}
      #event>.container{padding-top:1rem;}
+     #event .row{background-color:transparent;}
      #event .row>div:nth-of-type(4),
      #event .row>div:nth-of-type(5){margin-top:0;}
      .evt{padding:0;}
