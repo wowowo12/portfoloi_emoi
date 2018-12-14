@@ -4,7 +4,7 @@ $(".h_order").click(function(){
 $("header").stop().click(function(){
     if($(window).width()>960) $(".h_order").animate({"bottom":"-255px"});
 });
-$(".nav_bg").hover(function(){
+$(".nav_desk").hover(function(){
     $(this).css({"background-color":"#fff"});
     $(".lnb>li>a", $(this)).css({"color":"#000"});
     $(".gnb>li>a", $(this)).css({"color":"#ad3536"});
@@ -69,7 +69,7 @@ $(".ab_img").hover(function(){
 
 $(window).resize(function(){
     var lis = $(".swap_li").remove();
-    if($(this).width() > 632) {
+    if($(this).width() >= 576) {
         $(".swap_wrap").prepend(lis);
     }
     else {
