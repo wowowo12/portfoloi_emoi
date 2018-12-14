@@ -123,7 +123,6 @@ animation:ab_txt_ani ease-in 1.5s forwards}
 #event{background-color:#d8d8d8; position:relative;
 background-image:url("../img/event_bg.png"); background-size:initial;
 background-repeat:no-repeat; }
-.evt_bg{display:none;}
 #event>.container{padding-top:4rem;}
 .evt_food{position:absolute; top:-4%; right:-10%; width:26%;
     animation:food_ani2 1s ease-in infinite forwards;}
@@ -171,8 +170,6 @@ border-radius:0; padding:3% 1%;}
     .ab_food{right:5%;top:90%; width:30%;}
     .wide{display:none;}
     .react{display:block;}
-    #event{background-image:none;}
-    .evt_bg{display:block;}
     #event .row>div:nth-of-type(4),
     #event .row>div:nth-of-type(5){margin-top:2%;}
     .evt_tit>h3{font-weight:normal;}
