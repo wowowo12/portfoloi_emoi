@@ -118,45 +118,46 @@
                 </div>
             </div>
         </div>
+        <div class="h_order h_order">
+            <form>
+                <h5>예약하기 &nbsp;Book a Table</h5>
+                <div>
+                    <input type="date" id="orderdate" name="orderdate">
+                </div>
+
+                <select name="time" id="ordertime">
+                    <option value="" selected>시간 &nbsp;time</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                    <option value="18:00">18:00</option>
+                    <option value="19:00">19:00</option>
+                    <option value="20:00">20:00</option>
+
+                </select>
+                <select name="party_size" id="party_size">
+                    <option value="" selected>인원 &nbsp;party size</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+
+                </select>
+                <div><input type="submit" value="예약  book now" id="submit"></div>
+            </form>
+        </div>
     </header>
-    <div class="h_order h_order">
-        <form>
-            <h5>예약하기 &nbsp;Book a Table</h5>
-            <div>
-                <input type="date" id="orderdate" name="orderdate">
-            </div>
 
-            <select name="time" id="ordertime">
-                <option value="" selected>시간 &nbsp;time</option>
-                <option value="11:00">11:00</option>
-                <option value="12:00">12:00</option>
-                <option value="13:00">13:00</option>
-                <option value="14:00">14:00</option>
-                <option value="15:00">15:00</option>
-                <option value="16:00">16:00</option>
-                <option value="17:00">17:00</option>
-                <option value="18:00">18:00</option>
-                <option value="19:00">19:00</option>
-                <option value="20:00">20:00</option>
-
-            </select>
-            <select name="party_size" id="party_size">
-                <option value="" selected>인원 &nbsp;party size</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-
-            </select>
-            <div><input type="submit" value="예약  book now" id="submit"></div>
-        </form>
-    </div>
     <section id="about">
         <svg version="1.1" id="dot" class="dot" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             x="0px" y="0px" width="1363.729px" height="1111.374px" viewBox="0 0 1363.729 1111.374" enable-background="new 0 0 1363.729 1111.374"
@@ -266,56 +267,82 @@
             </div>
         </div>
     </section>
-    <section id="event">  
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 evt_tit">
-                    <h3>EVENT</h3>
-                </div>
-                <div class="col-md-3 col-sm-6 evt">
-                    <div class="evt_img">
-                        <img src="../img/event1.jpg" class="img">
+    <section id="event">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 evt_tit">
+                        <h3>EVENT</h3>
                     </div>
-                    <div class="evt_txt">
-                        <p>에머이 오픈 2주년 기념 신한카드 전 고객 25% 할인</p>
-                        <p>이벤트기간 : 2018-07-04~2018-08-06 </p>
-                        <button class="e_btn">VIEW MORE</button>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 evt">
-                    <div class="evt_img">
-                        <img src="../img/event2.jpg" class="img">
-                    </div>
-                    <div class="evt_txt">
-                            <p>에머이 여름 이벤트!#해시태그하고 레모네이드 마시자!</p>  
-                             <p>이벤트기간 : 2018-07-11~2018-08-11</p>
+                    <div class="col-md-3 col-sm-6 evt">
+                        <div class="evt_img">
+                            <img src="../img/event1.jpg" class="img">
+                        </div>
+                        <div class="evt_txt">
+                            <p>에머이 오픈 2주년 기념 신한카드 전 고객 25% 할인</p>
+                            <p>이벤트기간 : 2018-07-04~2018-08-06 </p>
                             <button class="e_btn">VIEW MORE</button>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-3 col-sm-6 evt">
-                    <div class="evt_img">
-                        <img src="../img/event3.jpg" class="img">
+                    <div class="col-md-3 col-sm-6 evt">
+                        <div class="evt_img">
+                            <img src="../img/event2.jpg" class="img">
+                        </div>
+                        <div class="evt_txt">
+                            <p>에머이 여름 이벤트!#해시태그하고 레모네이드 마시자!</p>
+                            <p>이벤트기간 : 2018-07-11~2018-08-11</p>
+                            <button class="e_btn">VIEW MORE</button>
+                        </div>
                     </div>
-                    <div class="evt_txt">
-                            <p>에머이에서 맛보고 싶은 베트남 음식! 신메뉴 이벤트.</p>
+                    <div class="col-md-3 col-sm-6 evt">
+                        <div class="evt_img">
+                            <img src="../img/event3.jpg" class="img">
+                        </div>
+                        <div class="evt_txt">
+                            <p>에머이에서 맛보고 싶은 베트남 음식은? 신메뉴 이벤트.</p>
                             <p>이벤트기간 : 2018-06-29 ~2018-08-20</p>
                             <button class="e_btn">VIEW MORE</button>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-3 col-sm-6 evt">
-                    <div class="evt_img">
-                        <img src="../img/event4.jpg" class="img">
-                    </div>
-                    <div class="evt_txt">
-                            <p>에머이에서 연말맞이 반값이벤트! 연말도 에머이에서!</p>  
+                    <div class="col-md-3 col-sm-6 evt">
+                        <div class="evt_img">
+                            <img src="../img/event4.jpg" class="img">
+                        </div>
+                        <div class="evt_txt">
+                            <p>에머이에서 연말맞이 반값이벤트! 연말도 에머이에서!</p>
                             <p>이벤트기간 : 2018-06-29 ~2018-08-20 </p>
                             <button class="e_btn">VIEW MORE</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <img src="../img/food_2.png" class="evt_food">
-    </section>
+            <img src="../img/food_2.png" class="evt_food">
+        </section>
+        <section id="material" class="desk">
+                <div class="material">
+                    <div class="mate_tit">
+                        <img src="../img/stroke.png" class="img">
+                        <p>에머이는 신선한 재료만을 고집합니다!</p>
+                    </div>
+                    <p class="mate_txt">에머이의 원재료 살펴보기</span>
+                    <div class="materials">
+                        
+                        <ul class="clear">
+                            <li><img src="../img/m1.png"></li>
+                            <li><img src="../img/m3.png"></li>
+                            <li><img src="../img/m2.png"></li>
+                            <li><img src="../img/m5.png"></li>
+                            <li><img src="../img/m4.png"></li>
+                            <li><img src="../img/m6.png"></li>
+                            <li><img src="../img/m7.png"></li>
+                        </ul>
+                        <span id="bt_prev"><i class="fas fa-angle-left"></i></span>
+                        <span id="bt_next"><i class="fas fa-angle-right"></i></span>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div class="container"></div>
+            </footer>
     <!-- <li><a href="#"><i class="fab fa-instagram"></i></a></li>
 <li><a href="#"><i class="fab fa-facebook"></i></a></li> -->
     <script defer src="../js/main.js"></script>

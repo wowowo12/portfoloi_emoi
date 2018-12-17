@@ -10,9 +10,10 @@ max-width:370px;}
 /* navigation 데스크탑 */
 .nav_desk{width:100%; height:90px; background-color:#232a30; position:absolute;
 top:0; display:block;}
-.nav_desk .lnbs{font-family:seoul-namsan-jang-eb; font-size:1rem;font-weight:bold;}
+.nav_desk .lnbs{font-family:seoul-namsan-jang-eb; font-size:0.9rem;font-weight:500;}
 .nav_desk .logo{width:15%;}
-.nav_desk .img_logo, .nav_desk .img_logo_on{width:100%; max-width:100px; margin-top:10px;}
+.nav_desk .img_logo, .nav_desk .img_logo_on{width:100%; max-width:
+    90px; margin-top:10px;}
 .nav_desk .img_logo_on{display:none;}
 .nav_desk .lnb{width:65%; position:relative;}
 .nav_desk .lnb>li{float:left; width:20%; text-align:center; line-height:90px; position:relative; }
@@ -29,7 +30,7 @@ border-radius:0 0 10px 10px; position:absolute; display:none;}
 .nav_desk .lnb_down{background-color:#fff; border-radius:0 0 10px 10px; display:none;}
 .nav_desk .lnb_down>li>a{padding-bottom:1rem; display:block;}
 /* gnb */
-.nav_desk .gnb{width:20%; font-weight:normal; font-size:0.875rem;
+.nav_desk .gnb{width:20%; font-weight:normal; font-size:0.8rem;
 color:rgba(255,255,255,0.7)}
 .nav_desk .gnb>li{float:left;}
 
@@ -121,19 +122,21 @@ animation:ab_txt_ani ease-in 1.5s forwards}
 .ban_txt>h2{font-weight:500; font-size:3rem;}
 .ban_txt>p{font-size:0.875rem;}
 /* event */
-#event{background-color:#d8d8d8; position:relative;
+#event{background-color:#ececec; position:relative; 
 background-image:url("../img/event_bg.png"); background-size:initial;
 background-repeat:no-repeat; }
-#event>.container{padding-top:4rem;}
+#event>.container{padding:4rem 0 3rem;}
 .evt_food{position:absolute; top:-4%; right:-10%; width:26%;
     animation:food_ani2 1s ease-in infinite forwards;}
-#event .row{background-color:rgba(255,255,255,0.4);}
+#event .row{background-color:rgba(255,255,255,0.5);padding:0 10px 15px;}
+
 .evt_tit{padding:0;}
-.evt_tit>h3{font-size:1.5rem; color:#fff; background-color:#1f282b;
-display:inline-block; padding:0.3rem 1.2rem ; margin-bottom:2.5rem;}
+.evt_tit>h3{font-size:2.2rem; color:#fff;
+display:inline-block;font-weight:500; padding:0.3rem 1rem 0.3rem 3.5rem;
+background-color:#1f282b; margin-bottom:2.5rem; margin-left:-10px;}
 .evt{padding-right:5px; padding-left:5px;}
 .evt_img{background-color:#1f282b; border:7px solid #1f282b;}
-.evt_txt{font-size:0.875rem; border:10px solid #1f282b; 
+.evt_txt{font-size:0.875rem; border:15px solid #1f282b; 
     border-top:5px;background-color:#1f282b; text-align:center;
 color:#fff;}
 .evt_txt>p:first-child{text-align:left;}
@@ -141,12 +144,31 @@ color:#fff;}
 margin-bottom:1rem;}
 .evt_txt>.e_btn{outline:none;border:none;background-color:#fff; color:#1f282b;
 padding:0.4rem 0.9rem; border-radius:12px; font-weight:500}
+
+/* material */
+#material{padding:0 0 2rem; background-color:#fff;}
+.material{margin:0 auto; width:960px; }
+.mate_tit{width:60%; position:relative; margin:2.5rem auto;}
+.mate_tit>p{font-family: 'Nanum Pen Script', cursive; font-size:2rem; width:100%;color:#fff;
+position:absolute; top:50%; left:50%; transform:translate(-24%,-24%)}
+.materials{width:960px; margin: 0 auto; position:relative; overflow:hidden;
+height:300px;}
+.mate_txt{background-color:#d8d8d8; color:#494949;
+padding:0.5rem 1.5rem; border-left:5px solid #ad3536; display:inline-block; }
+.materials>ul{width:1344px; position:absolute;}
+.materials>ul>li{float:left;}
+
+#bt_prev{font-size:3rem; color:#eaeaea; position:absolute; top:50%;left:0;
+transform:translateY(-50%)}
+#bt_next{font-size:3rem; color:#eaeaea; position:absolute; top:50%; right:0;
+transform:translateY(-50%)}
 @keyframes food_ani2{
     0%{top:-5%;}
     50%{top:-4%;}
     100%{top:-5%}
 }
-
+/* footer */
+footer{background-color:#494949; padding:4rem 0;}
 /* mediaQuery */
 @media (max-width:1280px){
 html, body{font-size:14px;}
@@ -156,11 +178,12 @@ border-radius:0; padding:3% 1%;}
 .h_order input, .h_order select{background-color:rgba(173,53,54,0.5);}
 .ban_txt>h2{font-weight:500; font-size:2.1rem;}
 }
-@media (max-width:960px){
+@media (max-width:960px){ 
     .nav_desk{display:none;}
+    .desk{display:none;}
     .nav_mo{display:block;}
-    header{ background-attachment:scroll }
-    .h_order{position:static; width:100%; border-bottom:2rem solid #ad3536;border-top:2rem solid #ad3536;height:auto; background-color:#ad3536;}
+    header{ background-attachment:scroll; }
+    .h_order{position:static; margin-top:100%; width:100%; border-bottom:2rem solid #ad3536;border-top:2rem solid #ad3536;height:auto; background-color:#ad3536;}
     .ab_food{bottom:10%; width:35%;}
     .ban_txt>h2{font-weight:500; font-size:2.5rem;}
     .nav_mo {background-color:transparent; };
@@ -173,18 +196,18 @@ border-radius:0; padding:3% 1%;}
     .react{display:block;}
     #event .row>div:nth-of-type(4),
     #event .row>div:nth-of-type(5){margin-top:2%;}
-    .evt_tit>h3{font-weight:normal;}
-    .evt_food{position:absolute; top:-2%; right:-10%; width:40%;
+    .evt_food{position:absolute; top:-9%; right:-10%; width:35%;
         animation:food_ani2 1s ease-in infinite forwards;}
         @keyframes food_ani2{
-            0%{top:-3%;}
-            50%{top:-2%;}
-            100%{top:-3%}
+            0%{top:-8%;}
+            50%{top:-9%;}
+            100%{top:-8%}
         }
 }
 
 @media (max-width:575px){
     #banner{padding-bottom:0;}
+    .lnbs>div{margin-left:0;}
      .ab_img{width:80%; margin:0 auto;}
      #about{padding-top:3rem;}
      #about ul:nth-of-type(1)>.ab_txt,
@@ -196,15 +219,15 @@ border-radius:0; padding:3% 1%;}
      @keyframes food_ani{
         0%{top:98%;}
         50%{top:98.5%;}
-        100%{top:98%;}
+        100%{top:98.5%;}
     }
-     .evt_food{width:35%;}
+     .evt_food{width:30%;}
      .ab_cont>.ab_txt p>span{display:inline;}
      .ab_txt_ani{letter-spacing:0;}
      .ban_txt>p{display:none;}
      #event{background-image:none; background-color:#fff;}
-     #event>.container{padding-top:1rem;}
-     #event .row{background-color:transparent;}
+     #event>.container{padding:0 15px;}
+     #event .row{background-color:transparent; padding:0;}
      #event .row>div:nth-of-type(4),
      #event .row>div:nth-of-type(5){margin-top:0;}
      .evt{padding:0;}

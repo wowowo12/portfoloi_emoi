@@ -1,16 +1,29 @@
-[debug] [2018-12-14T08:51:55.902Z] ----------------------------------------------------------------------
-[debug] [2018-12-14T08:51:55.906Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
-[debug] [2018-12-14T08:51:55.906Z] CLI Version:   6.1.2
-[debug] [2018-12-14T08:51:55.906Z] Platform:      win32
-[debug] [2018-12-14T08:51:55.906Z] Node Version:  v10.13.0
-[debug] [2018-12-14T08:51:55.908Z] Time:          Fri Dec 14 2018 17:51:55 GMT+0900 (GMT+09:00)
-[debug] [2018-12-14T08:51:55.908Z] ----------------------------------------------------------------------
+[debug] [2018-12-17T05:02:02.068Z] ----------------------------------------------------------------------
+[debug] [2018-12-17T05:02:02.075Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2018-12-17T05:02:02.075Z] CLI Version:   6.1.2
+[debug] [2018-12-17T05:02:02.076Z] Platform:      win32
+[debug] [2018-12-17T05:02:02.076Z] Node Version:  v10.13.0
+[debug] [2018-12-17T05:02:02.091Z] Time:          Mon Dec 17 2018 14:02:02 GMT+0900 (GMT+09:00)
+[debug] [2018-12-17T05:02:02.091Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2018-12-14T08:51:55.925Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-12-14T08:51:55.926Z] > authorizing via signed-in user
-[debug] [2018-12-14T08:51:55.926Z] [iam] checking project wowowo-emoi for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
-[debug] [2018-12-14T08:51:55.929Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/wowowo-emoi:testIamPermissions  
+[debug] [2018-12-17T05:02:02.134Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-12-17T05:02:02.136Z] > authorizing via signed-in user
+[debug] [2018-12-17T05:02:02.136Z] [iam] checking project wowowo-emoi for permissions ["firebase.projects.get"]
+[debug] [2018-12-17T05:02:02.143Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-12-17T05:02:02.144Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2018-12-17T05:02:02.550Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-17T05:02:02.559Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/wowowo-emoi:testIamPermissions  
 
-[debug] [2018-12-14T08:51:57.186Z] <<< HTTP RESPONSE 200
-[debug] [2018-12-14T08:51:57.190Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/wowowo-emoi  
+[debug] [2018-12-17T05:02:03.791Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-17T05:02:03.794Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/wowowo-emoi  
  
+[debug] [2018-12-17T05:02:04.929Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'D:\fbroot\portfoloi_emoi'...
+[info] 
+[debug] [2018-12-17T05:02:04.937Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/608719576158/clients/_:getWebAppConfig  
+ 
+[debug] [2018-12-17T05:02:05.626Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
